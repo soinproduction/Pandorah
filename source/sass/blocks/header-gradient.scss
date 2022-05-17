@@ -1,0 +1,17 @@
+.header-gradient {
+  background: var(--header-gradient);
+  padding: 8px 0;
+  @include dfcs;
+  grid-gap: clamp(15px, 3.226vw, 40px);
+
+  &__descr {
+    margin-left: clamp(10px, 1.774vw, 22px);
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(16px, 1.452vw, 18px);
+    line-height: 130%;
+    color: var(--color-a);
+    opacity: 0.5;
+  }
+}

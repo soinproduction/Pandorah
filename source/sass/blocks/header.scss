@@ -1,0 +1,9 @@
+header {
+  background-color: var( --header-bg);
+}
+
+.header {
+  display: grid;
+  grid-template-columns: clamp(500px, 44.032vw, 546px) auto;
+  justify-content: space-between;
+}
