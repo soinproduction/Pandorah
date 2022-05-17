@@ -1,0 +1,65 @@
+.main-aside {
+  &__logo svg {
+    fill: transparent;
+  }
+
+  &__logo + &__list {
+    margin-top: clamp(20px, 2.419vw, 30px);
+  }
+
+  &__item {
+    background: var(--aside-item__bg);
+    border-radius: 10px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    grid-gap: clamp(20px, 2.419vw, 30px);
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    padding: clamp(20px, 2.903vw, 36px)
+             clamp(15px, 3.952vw, 49px)
+             clamp(20px, 3.629vw, 45px);
+    &--nav {
+      padding: clamp(20px, 3.629vw, 45px) clamp(15px, 3.226vw, 40px);
+    }
+  }
+
+  &__image {
+    margin: -10% -15% 20px;
+
+    img, picture {
+      width: 100%;
+    }
+  }
+
+  &__title {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 700;
+    font-size: clamp(20px, 2.419vw, 30px);
+    line-height: 100%;
+    color: var(--color-b);
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(16px, 1.452vw, 18px);
+    line-height: 115%;
+    color: var(--color-b);
+    opacity: 0.7;
+  }
+
+  &__button {
+    margin-top: clamp(20px, 3.226vw, 40px);
+  }
+
+
+}

@@ -1,8 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  color: #000000;
-  background-color: #fff;
+  color: var(--color-a);
+  background-color: var(--body-bg);
   width: 100%;
   position: relative;
   overflow-x: hidden;
@@ -32,6 +32,9 @@ html {
   box-sizing: border-box;
 }
 
+main {
+  padding: clamp(20px, 5.403vw, 67px) 0 clamp(20px, 8.065vw, 100px);
+}
 
 * {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -128,7 +131,7 @@ input[type="number"] {
   padding: 0 10px;
 
   &--header {
-    max-width: 1600px;
+    max-width: 1620px;
   }
 }
 

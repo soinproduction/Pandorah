@@ -27,14 +27,16 @@
     font-family: var(--font-family);
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 20px;
-    /* or 111% */
-
+    font-size: clamp(16px, 1.452vw, 18px);
+    line-height: 111%;
+    color: var( --color-a);
     display: flex;
     align-items: center;
+    grid-gap: 15px;
 
-    color: #FFFFFF;
-
+    &-profit {
+      color: #23FF8C;
+      font-weight: 700;
+    }
   }
 }

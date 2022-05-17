@@ -1,0 +1,41 @@
+.aside-nav {
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    grid-gap: clamp(20px, 2.823vw, 35px);
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    grid-gap: 30px;
+    opacity: .6;
+    transition: all .4s;
+
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: var(--color-e);
+
+    svg {
+      opacity: .3;
+      transition: inherit;
+    }
+
+    &.active {
+      opacity: 1;
+      font-weight: 700;
+
+      svg {
+        opacity: 1;
+        transform: rotate(45deg);
+      }
+    }
+  }
+
+
+}
