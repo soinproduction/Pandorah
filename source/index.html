@@ -1,147 +1,163 @@
 <!DOCTYPE html>
 <html lang="Ru">
-  @@include('_head.html',{})
+@@include('_head.html',{})
+
 <body>
   @@include('_header.html',{})
 
   <main>
-      <div class="main-wrapper">
-          <aside class="main-aside">
-            <a href="#" class="main-aside__logo">
-              <svg width='320' height='70'>
-                <use href='img/sprite/sprite.svg#logo'></use>
-              </svg>
-            </a>
+    <div class="main-wrapper">
+      <aside class="main-aside">
+        <a href="#" class="main-aside__logo">
+          <svg width='320' height='70'>
+            <use href='img/sprite/sprite.svg#logo'></use>
+          </svg>
+        </a>
 
-            <ul class="main-aside__list">
-              <li class="main-aside__item main-aside__item--nav">
-                <nav class="main-aside__nav aside-nav">
-                  <ul class="aside-nav__list">
-                    <li class="aside-nav__item">
-                      <a href="#" class="aside-nav__link active">
-                        <svg width='18' height='18'>
-                          <use href='img/sprite/sprite.svg#menu-icon'></use>
-                        </svg>
-                        <span>
-                          About
-                        </span>
-                      </a>
-                    </li>
-                    <li class="aside-nav__item">
-                      <a href="#" class="aside-nav__link">
-                        <svg width='18' height='18'>
-                          <use href='img/sprite/sprite.svg#menu-icon'></use>
-                        </svg>
-                        <span>
-                          Games
-                        </span>
-                      </a>
-                    </li>
-                    <li class="aside-nav__item">
-                      <a href="#" class="aside-nav__link">
-                        <svg width='18' height='18'>
-                          <use href='img/sprite/sprite.svg#menu-icon'></use>
-                        </svg>
-                        <span>
-                          Market
-                        </span>
-                      </a>
-                    </li>
-                    <li class="aside-nav__item">
-                      <a href="#" class="aside-nav__link">
-                        <svg width='18' height='18'>
-                          <use href='img/sprite/sprite.svg#menu-icon'></use>
-                        </svg>
-                        <span>
-                          Staking
-                        </span>
-                      </a>
-                    </li>
-                    <li class="aside-nav__item">
-                      <a href="#" class="aside-nav__link">
-                        <svg width='18' height='18'>
-                          <use href='img/sprite/sprite.svg#menu-icon'></use>
-                        </svg>
-                        <span>
-                          Pandoria
-                        </span>
-                      </a>
-                    </li>
-                  </ul>
-                </nav>
-              </li>
-              <li class="main-aside__item main-aside__item--nav">
-                <nav class="main-aside__nav aside-nav">
-                  <ul class="aside-nav__list">
-                    <li class="aside-nav__item">
-                      <a href="#" class="aside-nav__link">
-                        <svg width='18' height='18'>
-                          <use href='img/sprite/sprite.svg#menu-icon'></use>
-                        </svg>
-                        <span>
-                          Community
-                        </span>
-                      </a>
-                    </li>
-                  </ul>
-                </nav>
+        <ul class="main-aside__list">
+          <li class="main-aside__item main-aside__item--nav">
+            <nav class="main-aside__nav aside-nav">
+              <ul class="aside-nav__list">
+                <li class="aside-nav__item">
+                  <a href="#" class="aside-nav__link active">
+                    <svg width='18' height='18'>
+                      <use href='img/sprite/sprite.svg#menu-icon'></use>
+                    </svg>
+                    <span>
+                      About
+                    </span>
+                  </a>
+                </li>
+                <li class="aside-nav__item">
+                  <a href="#" class="aside-nav__link">
+                    <svg width='18' height='18'>
+                      <use href='img/sprite/sprite.svg#menu-icon'></use>
+                    </svg>
+                    <span>
+                      Games
+                    </span>
+                  </a>
+                </li>
+                <li class="aside-nav__item">
+                  <a href="#" class="aside-nav__link">
+                    <svg width='18' height='18'>
+                      <use href='img/sprite/sprite.svg#menu-icon'></use>
+                    </svg>
+                    <span>
+                      Market
+                    </span>
+                  </a>
+                </li>
+                <li class="aside-nav__item">
+                  <a href="#" class="aside-nav__link">
+                    <svg width='18' height='18'>
+                      <use href='img/sprite/sprite.svg#menu-icon'></use>
+                    </svg>
+                    <span>
+                      Staking
+                    </span>
+                  </a>
+                </li>
+                <li class="aside-nav__item">
+                  <a href="#" class="aside-nav__link">
+                    <svg width='18' height='18'>
+                      <use href='img/sprite/sprite.svg#menu-icon'></use>
+                    </svg>
+                    <span>
+                      Pandoria
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </li>
+          <li class="main-aside__item main-aside__item--nav">
+            <nav class="main-aside__nav aside-nav">
+              <ul class="aside-nav__list">
+                <li class="aside-nav__item">
+                  <a href="#" class="aside-nav__link">
+                    <svg width='18' height='18'>
+                      <use href='img/sprite/sprite.svg#menu-icon'></use>
+                    </svg>
+                    <span>
+                      Community
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
 
 
-              </li>
-              <li class="main-aside__item">
-                <div class="main-aside__image">
-                  <picture>
-                    <source type='image/webp' srcset='img/aside-image.webp'>
-                    <img width='280' height='210' src='img/aside-image.png' alt='image'>
-                  </picture>
-                </div>
-                <span class="main-aside__title">
-                  Pandoria
-                </span>
-                <p class="main-aside__text">
-                  Exploring vast and mysterious lands of Pandoriah and making friends with its cute yet daring inhabitants will help you in PvP clashes.
-                  <br>
-                  <br>
-                  Land plot and pet NFTs grow stronger with your every victory and investment.
-                </p>
-                <button class="main-aside__button aside-btn">
-                  more info
-                </button>
-              </li>
+          </li>
+          <li class="main-aside__item">
+            <div class="main-aside__image">
+              <picture>
+                <source type='image/webp' srcset='img/aside-image.webp'>
+                <img width='280' height='210' src='img/aside-image.png' alt='image'>
+              </picture>
+            </div>
+            <span class="main-aside__title">
+              Pandoria
+            </span>
+            <p class="main-aside__text">
+              Exploring vast and mysterious lands of Pandoriah and making friends with its cute yet daring inhabitants
+              will help you in PvP clashes.
+              <br>
+              <br>
+              Land plot and pet NFTs grow stronger with your every victory and investment.
+            </p>
+            <button class="main-aside__button aside-btn">
+              more info
+            </button>
+          </li>
 
-              <li class="main-aside__item">
-                <span class="main-aside__title">
-                  Title Slogan
-                </span>
-                <p class="main-aside__text">
-                  $Pandora token sales
-                  coming soon
-                </p>
-                <button class="main-aside__button aside-btn">
-                  JOIN DISCORD
-                </button>
-              </li>
+          <li class="main-aside__item">
+            <span class="main-aside__title">
+              Title Slogan
+            </span>
+            <p class="main-aside__text">
+              $Pandora token sales
+              coming soon
+            </p>
+            <button class="main-aside__button aside-btn">
+              JOIN DISCORD
+            </button>
+          </li>
 
-            </ul>
-          </aside>
-        <div class="main-sections">
-          <section >
-            <div class="link-mask">
-              www
+        </ul>
+      </aside>
+      <div class="main-sections">
+        <section>
+
+
+          <div class="test-wrapp">
+            <div class="test">
+                <img width="1150" height="556" class="img1" src='img/main-img.png' alt='image'>
+                <svg width="100%" height="100%" class="svg-mask">
+                  <defs>
+                    <clipPath id="mask" >
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M1083.33 0.752441H1093.75V11.5552H1104.83V22.3579H1115.91V33.1605H1126.99V43.9633H1138.07V54.7659H1149.15L1149.15 65.7151L1149.15 69.1199L1149.15 443.76L1149.15 461.142L1149.15 489.202V492.607V503.556H1138.07V514.359H1126.99V525.162H1115.91V535.964H1104.83V546.767H1093.75V557.57H1083.33H1079.4H200.304H168.138H66.6538L56.2305 557.57V546.767H45.1513V535.964H34.0732V525.162H22.9941V514.359H11.917V503.556H0.837891V492.607V489.202L0.838453 455.643V430.916L0.837891 69.1199V65.7152V54.7659H11.917V43.9632H22.9941V33.1606H34.0732V22.3578H45.1513V11.5552H56.2305V0.752502H66.6538H70.5845L176.861 0.752441H1079.4H1083.33ZM23.0008 546.768V535.967H11.9233V525.166H0.838867V535.967H11.9233V546.768H0.945194V557.57H11.9233V546.768H23.0008ZM23.0008 546.768V557.463H34.0784V546.768H23.0008ZM23.0008 22.3551V11.5539H34.0784V0.858965H23.0008V11.5539H11.9233V0.752441H0.945194V11.5539H11.9233V22.3551H0.838867V33.1563H11.9233V22.3551H23.0008ZM1126.99 11.5541V22.3554H1138.06V33.1566H1149.15V22.3554H1138.06V11.5541H1149.04V0.752686H1138.06V11.5541H1126.99ZM1126.99 11.5541V0.859209H1115.91V11.5541H1126.99ZM1126.99 535.967V546.768H1115.91V557.463H1126.99V546.768H1138.06V557.57H1149.04V546.768H1138.06V535.967H1149.15V525.166H1138.06V535.967H1126.99Z" fill="#C4C4C4"/>
+
+                    </clipPath>
+                  </defs>
+                </svg>
             </div>
 
-            <div class="test-wrapp">
-              <div class="test">
 
-              </div>
-            </div>
+          </div>
 
 
 
 
-          </section>
-        </div>
+
+
+
+
+
+
+        </section>
       </div>
+    </div>
 
   </main>
 
@@ -152,5 +168,3 @@
 </body>
 
 </html>
-
-

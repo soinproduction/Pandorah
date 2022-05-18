@@ -95,10 +95,9 @@
 }
 
 .test-wrapp {
-  padding: 40px;
-
   background-color: blue;
   border-radius: 20px;
+  padding: 40px;
 }
 
 
@@ -108,37 +107,63 @@
   position: relative;
 
   width: 100%;
-  height: 300px;
-  padding: 40px;
+  // height: 300px;
 
-  background-color: green;
-  background-image: url(../img/nft-bg.png);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+
+  // background-color: green;
+  // background-image: url(../img/nft-bg.png);
+  // background-repeat: no-repeat;
+  // background-size: 100% 100%;
   border-radius: 20px;
+  // background-clip: content-box;
+  // background-image: url("../img/img.png");
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
+  //   width: 100%;
+  //   height: 100%;
 
-    width: 100%;
-    height: 100%;
+  //   border: 60px solid transparent;
+  //   border-image-source: var(--border-2);
+  //   border-image-slice: 60;
+  //   border-image-width: 60px;
+  //   border-image-repeat: stretch;
+  // }
 
-    border: 60px solid transparent;
-    border-image-source: var(--border-2);
-    border-image-slice: 60;
-    border-image-width: 60px;
-    border-image-repeat: stretch;
-  }
+
+
+    // img, picture {
+    //   width: 100%;
+    // }
+
+    // svg, rect {
+    //   width: 100%;
+    // }
 }
 
-.test2 {
+
+.test .img1 {
+  clip-path: url(#mask);
+  position: relative;
+}
+
+.img1 {
+  display: flex;
+  max-width: initial;
+  width: 100vw;
+}
+
+.test path {
   width: 100%;
-  height: 500px;
-
-  background-image: var(--border-1);
-  background-repeat: no-repeat;
-  background-size: 100%;
 }
+
+.svg-mask {
+  top:0;
+  left: 0;
+  position: absolute;
+}
+
+
