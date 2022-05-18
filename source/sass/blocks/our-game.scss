@@ -1,0 +1,14 @@
+.our-game {
+  background-color: var(--dark-section);
+  padding: clamp(15px, 2.313vw, 37px)
+           clamp(15px, 2.125vw, 34px);
+
+  &__more {
+    width: clamp(140px,10.125vw,162px);
+    height: clamp(35px,2.938vw,47px);
+  }
+
+  &__top {
+    margin-bottom: clamp(20px, 2.5vw, 40px);
+  }
+}

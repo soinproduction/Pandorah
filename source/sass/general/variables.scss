@@ -1,27 +1,38 @@
 :root {
     /* -- Fonts --*/
-  --font-family: "Roboto", sans-serif;
-  --font-family2: "Khand", sans-serif;
-  --font-family3: "Rubik", sans-serif;
+  --font-family: "Roboto", sans-serif; // var(--font-family);
+  --font-family2: "Khand", sans-serif; // var(--font-family2);
+  --font-family3: "Muller", sans-serif; // var(--font-family3);
 
   // text color
+  --general-title: #D0BC86; // var(--general-title);
+  --general-text: #D0BC86; // var(--general-text);
+
   --color-a: #ffffff; // var(--color-a);
   --color-b: #F5D78F; // var(--color-b);
   --color-c: #7C7CA5; // var(--color-c);
   --color-d: #23FF8C; // var(--color-d);
   --color-e: #DECA92; // var(--color-e);
+  --color-f: #0B0B20; // var(--color-f);
+  --color-g: #CFBB85; // var(--color-g);
 
 
   // bg
   --header-bg: #1D1D34;
   --body-bg: #0c0c24;
   --aside-item__bg: #1C1C38;
+  --dark-section:#151534;
+  --section__bg: #1D1D40;
   --header-gradient: linear-gradient(90deg, #61319F 2.13%, rgba(79, 38, 133, 0) 100.5%) ;
-
-
-
+  --image-title-bg:linear-gradient(90deg, #C1A568 1.04%, #DDD1A2 47.81%, #D8B762 98.64%);
+  --main-title-bg: linear-gradient(271.69deg, #D0FCFF 12.55%, #FFFFFF 76.1%);
     // btn--bg
   --join-btn: #00B757;
+
+    // border
+
+  --product-item: linear-gradient(99.98deg, #DDD0A1 7.83%, #C8B177 95.5%);
+  --product-item-descr:linear-gradient(180deg, #DCCFA0 6.36%, #DCD0A0 98.15%);
 }
 
 

@@ -5,7 +5,7 @@ body {
   background-color: var(--body-bg);
   width: 100%;
   position: relative;
-  overflow-x: hidden;
+  // overflow-x: hidden;
   font-family: inherit;
   font-weight: inherit;
   font-size: inherit;
@@ -175,9 +175,26 @@ input[type="number"] {
 .main-wrapper {
   display: grid;
   grid-template-columns: minmax(300px,1fr) 3.7fr;
-  max-width: 1600px;
+  max-width: 1620px;
+  padding: 0 10px;
   margin: 0 auto;
-  grid-gap: 80px;
+  grid-gap: Min(5vw, 80px);
+}
+
+.main-sections {
+  display: flex;
+  flex-direction: column;
+  grid-gap: clamp(20px, 3.125vw, 50px);
+}
+
+.section {
+  padding: clamp(15px, 1.875vw, 30px) clamp(15px, 1.563vw, 25px);
+  background: var(--section__bg);
+  border-radius: 10px;
+}
+
+.main-aside {
+  position: sticky;
 }
 
 
