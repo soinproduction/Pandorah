@@ -1,0 +1,67 @@
+.roadmap-section {
+  background: var(--roadmap-bg);
+
+  &__inner {
+    padding: 0;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &::before {
+      @include psevdo;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      border: .1px solid transparent;
+      border-image-source: var(--border-2);
+      border-image-slice: 60;
+      border-image-width: clamp(20px, 2.5vw, 40px);
+      border-image-repeat: stretch;
+      z-index: -1;
+    }
+  }
+
+  &__image {
+    bottom: 2px;
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    width: Min(30vw,480px);
+    left: Min(5vw, 80px);
+  }
+
+  &__content {
+    padding: clamp(20px, 3.75vw, 60px) Min(3.75vw,60px)
+             clamp(40px, 7.5vw, 120px) Min(3.75vw,60px);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    grid-gap: clamp(30px, 4.688vw, 75px);
+  }
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-gap: clamp(20px, 2.5vw, 40px);
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__title {
+    text-align: center;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(22px, 3vw, 48px);
+    line-height: 100%;
+  }
+
+  &__text {
+    text-align: center;
+  }
+}

@@ -1,0 +1,35 @@
+.footer-nav {
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 700px;
+    margin-left: auto;
+    grid-gap: 30px 60px;
+    justify-content: flex-end;
+  }
+
+  &__item {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: rgba(207, 187, 133, 0.8);
+
+    &:not(:first-child) {
+      position: relative;
+      // margin-left: 60px;
+
+      &::before {
+        @include psevdo;
+        width: 1px;
+        height: 110%;
+        background-color: currentColor;
+        top: 50%;
+        left: -30px;
+        transform: translate(100%, -50%);
+      }
+    }
+  }
+}

@@ -1,0 +1,82 @@
+.our-team {
+  display: flex;
+  flex-direction: column;
+  grid-gap: clamp(30px, 4.063vw, 65px);
+  padding: clamp(20px, 5vw, 80px)
+           clamp(15px, 3.125vw, 50px)
+           clamp(40px, 4.375vw, 70px);
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+    grid-gap: clamp(20px, 1.875vw, 30px);
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: clamp(15px, 1.875vw, 30px) clamp(10px, 1.25vw, 20px);
+  }
+
+  &__item {
+    padding: 21px 21px 23px;
+    border: 1px solid var(--color-j);
+    border-radius: 5px;
+    align-items: center;
+    position: relative;
+    grid-gap: 20px;
+  }
+
+  &__image {
+    background: var(--team-item-bg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 174px;
+    width: 157px;
+
+    @include dfc;
+
+
+    picture {
+      height: 153px;
+      width: 138px;
+      clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+      overflow: hidden;
+    }
+  }
+
+  &__link {
+    position: absolute;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 900;
+    font-size: clamp(16px, 1.188vw, 19px);
+    line-height: 100%;
+    color: var(--color-k);
+    top: 15px;
+    right: 20px;
+  }
+
+  &__descr {
+    background: var(--section__bg);
+    width: 100%;
+  }
+
+  &__name {
+    font-weight: 700;
+    font-size: clamp(18px, 1.375vw, 22px);
+    line-height: 100%;
+    text-transform: uppercase;
+  }
+
+  &__type {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 100%;
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: initial;
+  }
+
+
+}

@@ -3,9 +3,12 @@ body {
   padding: 0;
   color: var(--color-a);
   background-color: var(--body-bg);
+  background-image: url(../img/main-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
   width: 100%;
   position: relative;
-  // overflow-x: hidden;
   font-family: inherit;
   font-weight: inherit;
   font-size: inherit;
@@ -176,9 +179,14 @@ input[type="number"] {
   display: grid;
   grid-template-columns: minmax(300px,1fr) 3.7fr;
   max-width: 1620px;
+  width: 100%;
   padding: 0 10px;
   margin: 0 auto;
   grid-gap: Min(5vw, 80px);
+
+  @media (max-width: 1024px) {
+    grid-template-columns: 100%;
+  }
 }
 
 .main-sections {
@@ -195,6 +203,12 @@ input[type="number"] {
 
 .main-aside {
   position: sticky;
+
+  @media (max-width: 1024px) {
+    width: 300px;
+    position: fixed;
+    left: -100%;
+  }
 }
 
 

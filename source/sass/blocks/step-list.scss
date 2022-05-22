@@ -1,0 +1,103 @@
+.step-list {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  align-items: center;
+  grid-gap: clamp(30px, 3.75vw, 60px);
+  position: relative;
+  background-image: url(../img/roadmap.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  &__item {
+    display: grid;
+    grid-template-columns: .8fr auto .8fr;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 35px;
+    position: relative;
+
+    & + & {
+      &::before {
+        width: 1px;
+        height: calc(clamp(30px, 3.75vw, 60px) + 15px);
+        @include psevdo;
+        background: linear-gradient(180deg, #BEA66B 0%, #DAD0A1 100%);
+        left: 50%;
+        top: 0;
+        transform: translate(-50%, -89%);
+
+      }
+    }
+  }
+
+  &__middle {
+    height: 206px;
+    width: 212px;
+    background-image: url(../../img/step.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 8px;
+  }
+
+  &__year {
+    font-family: var(--font-family4);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #49B1D9;
+  }
+
+  &__item:nth-child(2) &__middle {
+    background-image: url(../../img/step2.svg);
+
+    .step-list__year {
+      color: #CC5DD0;
+    }
+  }
+
+  &__item:nth-child(3) &__middle {
+    background-image: url(../../img/step3.svg);
+    .step-list__year {
+      color: #80DB6C;
+    }
+  }
+
+  &__step {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    color: var(--color-a);
+    text-shadow: 0px 2px 20px rgba(255, 0, 77, 0.3);
+    text-transform: uppercase;
+  }
+
+  &__title {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 700;
+    font-size: clamp(16px, 1.5vw, 24px);
+    line-height: 108%;
+    text-align: right;
+    color: var(--color-i);
+  }
+
+  &__descr {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(18px, 1.25vw, 20px);
+    line-height: 120%;
+    color: var(--color-i);
+  }
+}

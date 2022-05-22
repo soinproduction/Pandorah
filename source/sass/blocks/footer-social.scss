@@ -1,0 +1,14 @@
+.footer-social {
+  display: flex;
+  grid-gap: 15px;
+
+  &__item {
+    width: 37px;
+    height: 43px;
+    @include dfc;
+    background: var(--social-border);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
