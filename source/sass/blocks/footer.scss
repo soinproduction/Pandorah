@@ -4,6 +4,13 @@ footer {
   padding: 0 10px;
   margin: 0 auto;
 
+  &.main-wrapper {
+    @media (max-width: 1440px) {
+      max-width: 100%;
+      grid-template-columns: 100%;
+
+    }
+  }
 }
 
 .footer {
@@ -22,11 +29,16 @@ footer {
   "text social";
   grid-gap: 20px 50px;
 
+  @media (max-width: 1440px) {
+    max-width: 100%;
+    grid-column: initial;
+  }
+
   @media (max-width: 1024px) {
     grid-column: initial;
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: 992px) {
     grid-template-areas:
     "logo social"
     "nav nav"
@@ -67,7 +79,7 @@ footer {
     line-height: 150%;
     color: rgba(207, 187, 133, 0.5);
 
-    @media (max-width: 767px) {
+    @media (max-width: 992px) {
       text-align: center;
     }
   }
@@ -88,7 +100,7 @@ footer {
 
   &__nav-list {
 
-    @media (max-width: 767px) {
+    @media (max-width: 992px) {
       justify-content: center;
       margin: 0 auto;
       grid-gap: 30px;

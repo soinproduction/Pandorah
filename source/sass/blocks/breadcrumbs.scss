@@ -1,0 +1,28 @@
+.breadcrumbs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  grid-gap: 25px 12px;
+
+  &__link {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  &__item:not(:last-child) {
+    .breadcrumbs__link {
+      position: relative;
+
+      &::after {
+        content: '/';
+        color: currentColor;
+        margin-left: 12px;
+      }
+
+    }
+  }
+}

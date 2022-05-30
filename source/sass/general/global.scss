@@ -133,8 +133,16 @@ input[type="number"] {
   position: relative;
   padding: 0 10px;
 
+  @media (min-width: 1440px) and (max-width:1920px) {
+    max-width: 1440px;
+  }
+
   &--header {
     max-width: 1620px;
+
+    @media (min-width: 1440px) and (max-width:1920px) {
+      max-width: 1440px;
+    }
   }
 }
 
@@ -183,6 +191,16 @@ input[type="number"] {
   padding: 0 10px;
   margin: 0 auto;
   grid-gap: Min(5vw, 80px);
+
+
+  @media (min-width: 1440px) and (max-width:1920px) {
+    max-width: 1440px;
+    grid-gap: 50px;
+  }
+
+  @media (max-width: 1440px) {
+    grid-gap: clamp(20px,3.125vw,50px);
+  }
 
   @media (max-width: 1024px) {
     grid-template-columns: 100%;
