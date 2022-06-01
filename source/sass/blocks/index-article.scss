@@ -7,12 +7,12 @@
   &__inner {
     position: relative;
     display: grid;
-    grid-template-columns: clamp(80px, 8vw, 128px) auto;
+    grid-template-columns: auto auto;
     align-items: center;
     z-index: 0;
     grid-gap: clamp(20px, 5.5vw, 88px);
-    padding: clamp(35px, 3.938vw, 63px)
-             clamp(20px, 5.125vw, 82px);
+    padding: clamp(35px, 3.938vw,45px)
+             clamp(20px, 5.125vw, 80px);
 
     &::before {
       @include psevdo;
