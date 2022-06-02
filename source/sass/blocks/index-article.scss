@@ -36,10 +36,10 @@
   &--images {
 
     .index-article__inner {
-        grid-template-columns: .8fr Min(31.25vw, 500px);
+        grid-template-columns: auto 1fr;
         justify-content: space-between;
-        grid-gap: 20px;
-        padding: clamp(35px, 3.938vw, 63px)
+        grid-gap: Min(6.528vw, 94px);
+        padding: 20px
                   clamp(20px, 4.375vw, 70px);
 
         @media (max-width: 1024px) {

@@ -3,7 +3,7 @@
   flex-direction: column;
   grid-gap: clamp(30px, 4.063vw, 65px);
   padding: clamp(20px, 5vw, 80px)
-           clamp(15px, 3.125vw, 50px)
+            clamp(15px,1.563vw,25px)
            clamp(40px, 4.375vw, 70px);
 
   &__top {
@@ -14,7 +14,7 @@
 
   &__list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(188px, 1fr));
     grid-gap: clamp(15px, 1.875vw, 30px) clamp(10px, 1.25vw, 20px);
   }
 
@@ -25,6 +25,19 @@
     align-items: center;
     position: relative;
     grid-gap: 20px;
+    overflow: hidden;
+
+    &:nth-last-child(-n + 2) {
+      opacity: .2;
+    }
+
+    &:nth-last-child(3) {
+      opacity: .5;
+    }
+
+    &:nth-last-child(4) {
+      opacity: .5;
+    }
   }
 
   &__image {
@@ -61,21 +74,52 @@
   &__descr {
     background: var(--section__bg);
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
   }
 
   &__name {
-    font-weight: 700;
-    font-size: clamp(18px, 1.375vw, 22px);
-    line-height: 100%;
-    text-transform: uppercase;
+    font-family: var(--font-family);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 144%;
+    color: var(--color-h);
   }
 
   &__type {
+    font-family: var(--font-family);
+    font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 100%;
-    color: rgba(255, 255, 255, 0.8);
-    text-transform: initial;
+    /* or 187% */
+    color: rgba(207, 187, 133, 0.8);
+    padding-top: 15px;
+    margin-top: 20px;
+    position: relative;
+
+    &::before {
+      height: 1px;
+      @include psevdo;
+      left: -100px;
+      right: -100px;
+      top: 0;
+      background-color: rgba(200, 177, 119, 0.5);
+    }
+  }
+
+  &__last-name {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(16px, 1.389vw, 20px);
+    line-height: 118%;
+    /* or 118% */
+    text-transform: uppercase;
+
+    color: var(--color-h);
   }
 
 

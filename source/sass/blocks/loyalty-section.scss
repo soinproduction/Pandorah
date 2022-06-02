@@ -1,0 +1,57 @@
+.loyalty-section {
+
+
+  &__inner {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    grid-gap: 80px;
+
+    padding: clamp(30px, 3.472vw, 50px)
+             clamp(25px, 4.861vw, 70px);
+
+    position: relative;
+    z-index: 0;
+
+    @media (max-width: 767px) {
+      grid-template-columns: 100%;
+      justify-content: center;
+      text-align: center;
+    }
+
+    &::before {
+      @include psevdo;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      border: .1px solid transparent;
+      border-image-source: var(--border-4);
+      border-image-slice: 60;
+      border-image-width: clamp(30px,2.5vw,60px);
+      border-image-repeat: stretch;
+      z-index: -1;
+    }
+  }
+
+  &__image {
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    grid-gap: clamp(15px, 2.083vw, 30px);
+  }
+
+  &__text {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(14px, 2.014vw, 19px);
+    line-height: 140%;
+    text-transform: uppercase;
+  }
+}
