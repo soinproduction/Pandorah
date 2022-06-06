@@ -1,0 +1,24 @@
+.nft-single {
+  padding: 0 0;
+
+
+  &__image {
+    margin-top: -20px;
+
+    picture, img {
+      border-radius: 10px;
+    }
+  }
+
+  &__article {
+    padding: 20px clamp(20px, 5.469vw, 70px) clamp(30px, 6.875vw, 88px);
+    display: flex;
+    flex-direction: column;
+    grid-gap: 20px;
+  }
+
+  &__text {
+    text-align: center;
+    font-size: clamp(18px, 1.719vw, 22px);
+  }
+}

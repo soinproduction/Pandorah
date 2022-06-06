@@ -3,7 +3,7 @@
   flex-direction: column;
   padding: 20px 0;
   align-items: center;
-  grid-gap: clamp(30px, 3.75vw, 60px);
+  grid-gap: clamp(55px, 3.75vw, 60px);
   position: relative;
   background-image: url(../img/roadmap.png);
   background-size: contain;
@@ -19,7 +19,7 @@
     position: relative;
 
     & + & {
-      &::before {
+      .step-list__middle::before {
         width: 1px;
         height: calc(clamp(30px, 3.75vw, 60px) + 15px);
         @include psevdo;
@@ -28,7 +28,22 @@
         top: 0;
         transform: translate(-50%, -89%);
 
+        @media screen and (max-width: 767px) {
+          display: none;
+        }
       }
+    }
+
+    @media screen and (max-width: 767px) {
+      grid-template-columns: auto 1fr;
+      grid-gap: 20px 30px;
+      grid-template-areas:
+      'a b'
+      'a c' ;
+    }
+
+    @media screen and (max-width: 375px) {
+      grid-gap: 10px 10px;
     }
   }
 
@@ -44,14 +59,23 @@
     align-items: center;
     justify-content: center;
     grid-gap: 8px;
+    position: relative;
+
+    @media screen and (max-width: 767px) {
+      width: clamp(90px, 27.640vw, 212px);
+      margin: 0 auto;
+      height: clamp(100px, 26.858vw, 206px);
+      grid-area: a;
+    }
+
   }
 
   &__year {
     font-family: var(--font-family4);
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 20px;
+    font-size: clamp(14px, 3.478vw, 20px);
+    line-height: 100%;
     color: #49B1D9;
   }
 
@@ -74,8 +98,8 @@
     font-family: var(--font-family);
     font-style: normal;
     font-weight: 400;
-    font-size: 48px;
-    line-height: 48px;
+    font-size: clamp(16px, 4.348vw, 48px);
+    line-height: 100%;
     text-align: center;
     color: var(--color-a);
     text-shadow: 0px 2px 20px rgba(255, 0, 77, 0.3);
@@ -90,14 +114,25 @@
     line-height: 108%;
     text-align: right;
     color: var(--color-i);
+
+    @media screen and (max-width: 767px) {
+      grid-area: b;
+      text-align: left;
+      align-self: flex-end;
+    }
   }
 
   &__descr {
     font-family: var(--font-family);
     font-style: normal;
     font-weight: 400;
-    font-size: clamp(18px, 1.25vw, 20px);
+    font-size: clamp(16px, 1.25vw, 20px);
     line-height: 120%;
     color: var(--color-i);
+
+    @media screen and (max-width: 767px) {
+      grid-area: c;
+      align-self: flex-start;
+    }
   }
 }

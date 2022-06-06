@@ -28,14 +28,18 @@
     &--nav {
       padding: clamp(20px, 3.629vw, 45px) clamp(15px, 3.226vw, 40px);
     }
+
+    &--image {
+      margin-top: 140px;
+      position: relative;
+    }
   }
 
   &__image {
-    margin-left: -32%;
-    margin-right: -10%;
-    margin-top: -28%;
-    width: 150%;
-
+    margin-top: -180px;
+    margin-bottom: 28px;
+    margin-left: -24%;
+    margin-right: -24%;
     img, picture {
       width: 100%;
     }
