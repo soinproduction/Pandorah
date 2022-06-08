@@ -64,6 +64,7 @@
   &__link {
     width: clamp(140px, 12.639vw, 180px);
     height: clamp(30px,3.264vw,47px);
+    display:none;
   }
 
   &__content {
