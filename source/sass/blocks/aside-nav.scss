@@ -21,19 +21,45 @@
     line-height: 26px;
     color: var(--color-e);
 
-    svg {
-      opacity: .3;
-      transition: inherit;
-    }
-
     &.active {
       opacity: 1;
       font-weight: 700;
 
-      svg {
+      .aside-nav__icon {
         opacity: 1;
-        transform: rotate(45deg);
+
+        &::before {
+          transform: translate(-50%, -50%) rotate(45deg);
+        }
       }
+    }
+  }
+
+  &__icon {
+    transition: all .4s;
+    position: relative;
+    opacity: .3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      width: 20px;
+      height: 20px;
+      transition: all .4s;
+    }
+
+    &::before {
+      transition: all .4s;
+      width: 30px;
+      height: 30px;
+      left: 50%;
+      top: 50%;
+      @include psevdo;
+      display: block;
+      border: 1px solid #CFBB85;
+
+      transform: translate(-50%, -50%);
     }
   }
 

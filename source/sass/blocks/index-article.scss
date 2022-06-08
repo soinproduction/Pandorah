@@ -10,6 +10,7 @@
     grid-template-columns: auto auto;
     align-items: center;
     z-index: 0;
+    overflow: hidden;
     grid-gap: clamp(20px, 5.5vw, 88px);
     padding: clamp(35px, 3.938vw,45px)
              clamp(20px, 5.125vw, 80px);
@@ -56,6 +57,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    &::before {
+      width: 320px;
+      height: 100%;
+
+      @include psevdo;
+
+      background-image: url(../img/img6_tr.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      z-index: -1;
+    }
   }
 
   &__content {
