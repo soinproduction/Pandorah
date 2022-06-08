@@ -87,6 +87,7 @@ footer {
   &__social {
     grid-area: social;
     margin-left: auto;
+    display: none;
 
     @media (max-width: 600px) {
       margin: 0 auto;
