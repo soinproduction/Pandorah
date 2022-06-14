@@ -7,9 +7,7 @@
   &__inner {
     position: relative;
     display: grid;
-    // grid-template-columns: auto auto;
-    grid-template-columns: 1fr 2fr;
-    background-image: url(../img/unlock-bg.png);
+    grid-template-columns: auto auto;
     background-size: cover;
     background-position: center;
     align-items: center;
@@ -76,15 +74,25 @@
     }
   }
 
+
+  &__inner--unlock {
+    grid-template-columns: 1fr 2fr;
+    background-image: url(../img/unlock-bg.png);
+
+    .index-article__content {
+        grid-column: 2 ;
+
+        @media (max-width: 575px) {
+            grid-column: 1;
+        }
+    }
+  }
+
   &__content {
     display: flex;
     flex-direction: column;
     grid-gap: 30px;
-    grid-column: 2 ;
 
-    @media (max-width: 575px) {
-        grid-column: 1;
-    }
   }
 
 
