@@ -1,38 +1,29 @@
-.subscribe-form {
+.update-form {
     opacity: 1;
     visibility: visible;
     transition: all .4s ease-in-out;
     transition-delay: .5s;
-
     &.hide {
         opacity: 0;
         visibility: hidden;
         transition: all .4s ease-in-out;
         transition-delay: .5s;
-
     }
-
-    padding: clamp(40px, 9.375vw, 96px)
-             Min(6.154vw, 158px)
-             clamp(40px, 11.426vw, 117px);
-
+    padding: clamp(40px, 9.375vw, 96px) Min(6.154vw, 158px) clamp(40px, 11.426vw, 117px);
     &__top {
         max-width: 800px;
         margin: 0 auto clamp(25px, 4.231vw, 55px);
         text-align: center;
     }
-
     &__title {
         font-weight: 700;
         font-size: clamp(20px, 4.688vw, 48px);
         text-align: center;
         text-transform: uppercase;
     }
-
     &__text {
         font-size: clamp(16px, 2.148vw, 22px);
     }
-
     &__inner {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -40,7 +31,6 @@
         grid-gap: clamp(20px, 3.077vw, 40px);
         margin-bottom: clamp(30px, 6.462vw, 84px);
     }
-
     &__label {
         display: flex;
         width: 100%;
@@ -48,7 +38,6 @@
         grid-gap: 5px;
         align-items: flex-start;
     }
-
     &__legend {
         font-family: var(--font-family);
         font-style: normal;
@@ -57,15 +46,12 @@
         line-height: 100%;
         color: rgba(245, 214, 143, 0.7);
     }
-
     &__input {
         border: 1px solid var(--color-m);
         border-radius: 10px;
         height: clamp(40px, 6.154vw, 80px);
         background: transparent;
         padding: 0 clamp(15px, 2.462vw, 32px);
-
-
         font-family: var(--font-family);
         font-style: normal;
         font-weight: 400;
@@ -73,7 +59,6 @@
         line-height: 100%;
         color: var(--color-m);
     }
-
     &__button {
         margin: 0 auto;
         width: clamp(140px, 19.692vw, 256px);
