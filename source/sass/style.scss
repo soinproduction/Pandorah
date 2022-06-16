@@ -1,5 +1,6 @@
 // ------------------------------- first level
 @import "general/normalize";
+@import "general/aos";
 @import "general/swiper";
 // ------------------------------- second level
 @import "general/fonts";
@@ -7,14 +8,7 @@
 @import "general/variables";
 // ------------------------------- third level
 @import "general/encoder_icon";
-
-
-
-
-
-
 // -----------------------------
 @import "general/global";
 @import "general/typography";
 @import "general/blocks";
-
